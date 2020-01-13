@@ -1,0 +1,44 @@
+
+.wrapper {
+    height: 262px;
+    position: relative;
+    overflow: hidden;
+}
+.coverflow {
+    width: 800px;
+    height: 600px;
+    /*margin-top: 50px;*/
+    /*padding-top: 100px;*/
+}
+
+.coverflow img {
+    width: 366px;
+    height: 260px;
+    -webkit-box-reflect: none !important;
+}
+
+@media only screen and (max-width: 480px ) {
+    .coverflow img {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media only screen and (min-width: 481px ) and (max-width: 767px) {
+    .coverflow img {
+        width: 220px;
+        height: 145px;
+    }
+}
+@media only screen and (min-width: 768px ) and (max-width: 900px) {
+    .coverflow img {
+        width: 240px;
+        height: 162px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .coverflow {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

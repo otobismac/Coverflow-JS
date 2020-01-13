@@ -1,0 +1,62 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+#coverflow {
+    overflow: hidden;
+    position: relative;
+    top: 17px;
+    width: 100%;
+    height: 896px;
+    margin-top: -300px;
+    background: #FFF;
+}
+.sliderCards{
+    height: 400px !important;
+    overflow: hidden;
+	padding: 0px 250px 0px 250px;
+}
+.cardTexts{
+    position: absolute;
+    margin-top: -141px;
+    width: 100%;
+    display: none;
+}
+.cardText{
+    display: none;
+    text-align: center;
+}
+
+
+.coverflow {
+	-webkit-perspective: 1200px;
+	overflow: hidden;
+}
+.cover {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-transition-property: margin-left, margin-top, -webkit-transform;
+	-webkit-transition-duration: .3s, .3s, .3s;
+	-webkit-transform-style: preserve-3d;
+}
+.cover > img {
+	width: 100%;
+	margin: 0;
+	vertical-align: top;
+	-webkit-box-reflect: below 0 -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, .4));
+}
+.cover-gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	-webkit-mask: -webkit-linear-gradient(left, rgba(255, 255, 255, 1),
+																							rgba(255, 255, 255, 0) 20%,
+																							rgba(255, 255, 255, 0) 80%,
+																							rgba(255, 255, 255, 1));
+}
